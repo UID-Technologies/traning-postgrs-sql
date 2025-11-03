@@ -24,10 +24,7 @@ By the end you will:
 > Good for a rapid test; data will vanish when the container is removed.
 
 ```bash
-docker run -d --name pg-temp \
-  -e POSTGRES_PASSWORD=StrongP@ss_123 \
-  -p 5432:5432 \
-  postgres:16
+docker run -d --name pg-temp -e POSTGRES_PASSWORD=StrongP@ss_123 -p 5432:5432   postgres:16
 ```
 
 Verify:
